@@ -146,10 +146,10 @@ public class OperationsController {
     public String getDivideResult(Model model, @Valid RatCalcForm ratCalcForm, BindingResult bindingResult) 
     {
         logger.info("getMultiplyResult ratCalcForm=" + ratCalcForm);
-        ratCalcForm.setOp("*");
+        ratCalcForm.setOp("/");
 
         // TODO: Fill this in with appropriate code
-        if (!bindingResult.hasErrors() && !checkDenominatorErrors(ratCalcForm)) 
+        if (!bindingResult.hasErrors() && !checkDenominatorErrors(ratCalcForm) && !checkDivideByZero(ratCalcForm)) 
         {
             Rational r1 = new Rational(ratCalcForm.getNum1(), ratCalcForm.getDenom1());
             Rational r2 = new Rational(ratCalcForm.getNum2(), ratCalcForm.getDenom2());
