@@ -124,7 +124,7 @@ public class OperationsController {
         {
             Rational r1 = new Rational(ratCalcForm.getNum1(), ratCalcForm.getDenom1());
             Rational r2 = new Rational(ratCalcForm.getNum2(), ratCalcForm.getDenom2());
-            Rational result = product(r1, r2);
+            Rational result = Rational.product(r1, r2);
             logger.info("r1=" + r1 + " r2=" + r2 + " result=" + result);
             ratCalcForm.setNumResult(result.getNumerator());
             ratCalcForm.setDenomResult(result.getDenominator());
