@@ -17,7 +17,7 @@
 
   <!-- (3) <artifactId/> -->
 
-  <artifactId>lab02</artifactId>
+  <artifactId>lab04</artifactId>
 
   <!-- (4) <version/> -->
   <version>1.0.0</version>
@@ -26,7 +26,7 @@
   <!-- (6) <name/> -->
   <!-- (7) <description/> -->
 
-  <description>Lab03 for CS56, W20</description>
+  <description>Lab04 for CS56, W20</description>
 
   <!-- (8) <url/> -->
   <!-- (9) <inceptionYear/> -->
